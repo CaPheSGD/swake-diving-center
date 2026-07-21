@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <p className="text-sm leading-7 text-slate-300">
               Swake Freedivers Siquijor is a local freediving center in Siquijor.
-              We aim to promote sustainable tourism while sharing our passion for 
+              We aim to promote sustainable freediving while sharing our passion for 
               mindfulness, peace, community, and personal growth through self-competition.
               From first-time intro sessions to line training, certification courses,
               and guided dives, we keep each session personal, paced, and
