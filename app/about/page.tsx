@@ -27,10 +27,10 @@ export default function AboutPage() {
               Local, guided, and safety-first
             </h2>
             <ul className="mt-4 space-y-2 text-sm leading-6 text-slate-300">
-              <li>Small, guided sessions with attention to each diver</li>
-              <li>Conditions-based planning for safer and better dives</li>
-              <li>Focus on technique, comfort, and long-term progression</li>
-              <li>Local knowledge of reefs, currents, and visibility</li>
+              <li>• Small, guided classes and openwater sessions</li>
+              <li>• Real time conditions-based dive planning</li>
+              <li>• Focus on technique, comfort, and long-term progression</li>
+              <li>• Local knowledge of reefs, currents, and visibility</li>
             </ul>
           </div>
       
