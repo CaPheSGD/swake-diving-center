@@ -1,0 +1,233 @@
+diff --git a/app/page.tsx b/app/page.tsx
+index e6e9b35..6f96e6e 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -10,18 +10,19 @@ export default function HomePage() {
+     <>
+       <LocalBusinessJsonLd />
+ 
+-      <section className="mx-auto max-w-6xl px-6 pt-16 lg:px-8">
+-        <PageHero
+-          eyebrow=""
+-          title={
+-            <>
+-              <span className="font-bold text-cyan-300">Freediving in{" "}</span>
+-              <span className="font-bold text-[#F15A24]">Siquijor</span>
+-            </>
+-          }
+-          description="for first-timers and experienced divers, with focus on safety, comfort, technique, and steady progress."
+-        />
+-      </section>
++      <PageHero
++        title={
++          <>
++            <span className="font-bold text-cyan-300">Freediving in{" "}</span>
++            <span className="font-bold text-[#F15A24]">Siquijor</span>
++          </>
++        }
++        description="for first-timers and experienced divers, with focus on safety, comfort, technique, and steady progress."
++        image={{
++          src: "/images/hero.webp",
++          alt: "Freediver gliding over a coral reef in Siquijor",
++        }}
++      />
+ 
+       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+diff --git a/components/mobile-nav.tsx b/components/mobile-nav.tsx
+new file mode 100644
+index 0000000..2d825eb
+--- /dev/null
++++ b/components/mobile-nav.tsx
+@@ -0,0 +1,86 @@
++"use client";
++
++import Link from "next/link";
++import { useEffect, useState } from "react";
++
++type NavItem = {
++  href: string;
++  label: string;
++};
++
++type MobileNavProps = {
++  navItems: NavItem[];
++  whatsappHref: string;
++};
++
++export function MobileNav({ navItems, whatsappHref }: MobileNavProps) {
++  const [open, setOpen] = useState(false);
++
++  useEffect(() => {
++    document.body.style.overflow = open ? "hidden" : "";
++    return () => {
++      document.body.style.overflow = "";
++    };
++  }, [open]);
++
++  return (
++    <div className="md:hidden">
++      <button
++        type="button"
++        onClick={() => setOpen((prev) => !prev)}
++        className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10"
++        aria-label={open ? "Close menu" : "Open menu"}
++        aria-expanded={open}
++        aria-controls="mobile-nav-panel"
++      >
++        <span className="relative block h-4 w-5">
++          <span
++            className={`absolute left-0 top-0 block h-0.5 w-5 bg-white transition duration-200 ${
++              open ? "translate-y-[7px] rotate-45" : ""
++            }`}
++          />
++          <span
++            className={`absolute left-0 top-[7px] block h-0.5 w-5 bg-white transition duration-200 ${
++              open ? "opacity-0" : "opacity-100"
++            }`}
++          />
++          <span
++            className={`absolute left-0 top-[14px] block h-0.5 w-5 bg-white transition duration-200 ${
++              open ? "-translate-y-[7px] -rotate-45" : ""
++            }`}
++          />
++        </span>
++      </button>
++
++      {open ? (
++        <div
++          id="mobile-nav-panel"
++          className="fixed inset-x-0 top-[65px] z-40 border-b border-[#3AA0C8]/20 bg-black"
++        >
++          <nav className="flex flex-col px-6 py-4">
++            {navItems.map((item) => (
++              <Link
++                key={item.href}
++                href={item.href}
++                onClick={() => setOpen(false)}
++                className="border-b border-white/5 py-3 text-base font-medium text-slate-200 transition hover:text-[#3AA0C8]"
++              >
++                {item.label}
++              </Link>
++            ))}
++
++            <a
++              href={whatsappHref}
++              target="_blank"
++              rel="noopener noreferrer"
++              onClick={() => setOpen(false)}
++              className="mt-4 rounded-full bg-[#F15A24] px-4 py-3 text-center text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
++            >
++              Book Now
++            </a>
++          </nav>
++        </div>
++      ) : null}
++    </div>
++  );
++}
+diff --git a/components/page-hero.tsx b/components/page-hero.tsx
+index b355adc..8851072 100644
+--- a/components/page-hero.tsx
++++ b/components/page-hero.tsx
+@@ -1,8 +1,14 @@
++import Image from "next/image";
++
+ type PageHeroProps = {
+   eyebrow?: string;
+   title: React.ReactNode;
+   description?: string;
+   kicker?: string;
++  image?: {
++    src: string;
++    alt: string;
++  };
+ };
+ 
+ export function PageHero({
+@@ -10,7 +16,47 @@ export function PageHero({
+   title,
+   description,
+   kicker,
++  image,
+ }: PageHeroProps) {
++  if (image) {
++    return (
++      <section className="relative overflow-hidden border-b border-[#3AA0C8]/20 bg-black">
++        <div className="absolute inset-0">
++          <Image
++            src={image.src}
++            alt={image.alt}
++            fill
++            priority
++            className="object-cover object-[50%_62%]"
++            sizes="100vw"
++          />
++          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
++          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/10 to-transparent" />
++        </div>
++
++        <div className="relative mx-auto max-w-6xl px-6 py-24 lg:px-8 lg:py-36">
++          {eyebrow ? (
++            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3AA0C8]">
++              {eyebrow}
++            </p>
++          ) : null}
++
++          <h1 className="mt-3 max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
++            {title}
++          </h1>
++
++          <p className="mt-5 max-w-2xl text-base leading-7 text-slate-200">
++            {description}
++          </p>
++
++          {kicker ? (
++            <p className="mt-5 text-sm font-medium text-[#F15A24]">{kicker}</p>
++          ) : null}
++        </div>
++      </section>
++    );
++  }
++
+   return (
+     <section className="border-b border-[#3AA0C8]/20 bg-black">
+       <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-20">
+diff --git a/components/site-layout.tsx b/components/site-layout.tsx
+index 6801195..3ead13f 100644
+--- a/components/site-layout.tsx
++++ b/components/site-layout.tsx
+@@ -1,5 +1,6 @@
+ import Link from "next/link";
+ import Image from "next/image";
++import { MobileNav } from "@/components/mobile-nav";
+ import { site } from "@/lib/site-data";
+ 
+ type SiteLayoutProps = {
+@@ -52,14 +53,18 @@ export function SiteLayout({ children }: SiteLayoutProps) {
+             ))}
+           </nav>
+ 
+-          <a
+-            href={site.contact.whatsapp}
+-            target="_blank"
+-            rel="noopener noreferrer"
+-            className="rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
+-          >
+-            Book Now
+-          </a>
++          <div className="flex items-center gap-3">
++            <a
++              href={site.contact.whatsapp}
++              target="_blank"
++              rel="noopener noreferrer"
++              className="rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
++            >
++              Book Now
++            </a>
++
++            <MobileNav navItems={navItems} whatsappHref={site.contact.whatsapp} />
++          </div>
+         </div>
+       </header>
+ 
