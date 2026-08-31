@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MobileNav } from "@/components/mobile-nav";
 import { site } from "@/lib/site-data";
 
 type SiteLayoutProps = {
@@ -52,14 +53,18 @@ export function SiteLayout({ children }: SiteLayoutProps) {
             ))}
           </nav>
 
-          <a
-            href={site.contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
-          >
-            Book Now
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={site.contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#F15A24] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#FF6A3A]"
+            >
+              Book Now
+            </a>
+
+            <MobileNav navItems={navItems} whatsappHref={site.contact.whatsapp} />
+          </div>
         </div>
       </header>
 
