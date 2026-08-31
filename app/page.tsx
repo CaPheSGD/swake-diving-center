@@ -10,18 +10,19 @@ export default function HomePage() {
     <>
       <LocalBusinessJsonLd />
 
-      <section className="mx-auto max-w-6xl px-6 pt-16 lg:px-8">
-        <PageHero
-          eyebrow=""
-          title={
-            <>
-              <span className="font-bold text-cyan-300">Freediving in{" "}</span>
-              <span className="font-bold text-[#F15A24]">Siquijor</span>
-            </>
-          }
-          description="for first-timers and experienced divers, with focus on safety, comfort, technique, and steady progress."
-        />
-      </section>
+      <PageHero
+        title={
+          <>
+            <span className="font-bold text-cyan-300">Freediving in{" "}</span>
+            <span className="font-bold text-[#F15A24]">Siquijor</span>
+          </>
+        }
+        description="for first-timers and experienced divers, with focus on safety, comfort, technique, and steady progress."
+        image={{
+          src: "/images/hero.webp",
+          alt: "Freediver gliding over a coral reef in Siquijor",
+        }}
+      />
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
