@@ -238,7 +238,7 @@ export const courseCards: CourseCard[] = [
       "Advanced technique refinement",
       "Rescue and safety progression",
       "Depth-specific coaching",
-      "Structured performance feedback"
+      "Structured performance feedback",
       "Transition recreational divers into autonomous",
     ],
     note:
