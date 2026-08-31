@@ -24,14 +24,14 @@ export default function AboutPage() {
           {/* Identity / Philosophy */}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h2 className="text-xl font-semibold text-white">
-              Local, guided, and safety-first
+              <li>• Small, intimate classes and openwater sessions</li>
             </h2>
-            <ul className="mt-4 space-y-2 text-sm leading-6 text-slate-300">
-              <li>• Small, guided classes and openwater sessions</li>
-              <li>• Real time conditions-based dive planning</li>
+            <h2 className="text-xl font-semibold text-white">
+            </h2>
               <li>• Focus on technique, comfort, and long-term progression</li>
+            <h2 className="text-xl font-semibold text-white">
               <li>• Local knowledge of reefs, currents, and visibility</li>
-            </ul>
+            </h2>
           </div>
       
           {/* Description */}
