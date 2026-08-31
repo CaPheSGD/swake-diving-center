@@ -225,10 +225,10 @@ export const courseCards: CourseCard[] = [
   },
   {
     title: "Molchanovs Wave 2",
-    duration: "3 days",
+    duration: "3-4 days",
     price: "Contact for current rate",
     summary:
-      "Progressive course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
+      "Advanced course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
     requirements: [
       "Wave 1 or equivalent certification",
       "Comfort with previous depth training",
@@ -238,10 +238,31 @@ export const courseCards: CourseCard[] = [
       "Advanced technique refinement",
       "Rescue and safety progression",
       "Depth-specific coaching",
-      "Structured performance feedback",
+      "Structured performance feedback"
+      "Transition recreational divers into autonomous",
     ],
     note:
       "Best suited to divers who already have a solid foundation and want guided progression.",
+    gallery: [],
+  },
+  {
+    title: "Molchanovs Wave 3",
+    duration: "4-5 days",
+    price: "Contact for current rate",
+    summary:
+      "Master freediving certification course covering advanced equalization, open-water techniques, and a resilient mental foundation.",
+    requirements: [
+      "Wave 2 or equivalent certification",
+      "Comfort with previous depth training",
+      "Good equalization control",
+    ],
+    highlights: [
+      "Transitioning to deep Frenzel and mouthfill equalization, plus reverse packing",
+      "Attention deconcentration and relaxation techniques under performance pressure",
+      "Qualification to act as an assistant instructor for Wave 1 and Wave 2 courses",
+    ],
+    note:
+      "Best suited to divers who are eager to master recreational freediving training.",
     gallery: [],
   },
 ];
