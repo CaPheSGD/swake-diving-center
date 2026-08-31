@@ -5,7 +5,7 @@ import { site } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Swake Freedivers Siquijor and its local, safety-first approach to freediving.",
+    "Learn about Swake Freedivers Siquijor and its approach to freediving.",
   alternates: { canonical: "/about" },
 };
 
@@ -14,8 +14,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="A local, safety-first approach to freediving in Siquijor"
-        description="Personal, guided sessions shaped by local conditions, focused on safety, technique, and a calm learning pace."
+        title="A personal, mindfulness, and safety-first approach to freediving in Siquijor"
+        description=""
       />
 
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
@@ -24,13 +24,13 @@ export default function AboutPage() {
           {/* Identity / Philosophy */}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h2 className="text-xl font-semibold text-white">
-              <li>• Small, intimate classes and openwater sessions</li>
+              <li> Small, intimate classes and openwater sessions</li>
             </h2>
             <h2 className="text-xl font-semibold text-white">
+              <li> Focus on technique, comfort, and long-term progression</li>
             </h2>
-              <li>• Focus on technique, comfort, and long-term progression</li>
             <h2 className="text-xl font-semibold text-white">
-              <li>• Local knowledge of reefs, currents, and visibility</li>
+              <li> Local knowledge of reefs, currents, and visibility</li>
             </h2>
           </div>
       
