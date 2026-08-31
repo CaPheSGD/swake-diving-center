@@ -30,7 +30,7 @@ export default function AboutPage() {
               <li> Focus on technique, comfort, and long-term progression</li>
             </h2>
             <h2 className="text-xl font-semibold text-white">
-              <li> Local knowledge of reefs, currents, and visibility</li>
+              <li> Local knowledge of site conditions</li>
             </h2>
           </div>
       
