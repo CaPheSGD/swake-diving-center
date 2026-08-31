@@ -61,18 +61,16 @@ export default function AboutPage() {
               and international freedivers alike.
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Today, Swake is a local freediving center in Siquijor offering intro classes, Molchanovs Wave 
-              1–3 certification, fundive adventures, and regular training sessions. The group dynamics is 
-              exactly why the idea that nothing in the ocean exists on its own is not just a social media 
-              tagline but is foundational to how we teach. We aim to promote sustainable freediving while 
-              sharing our passion for mindfulness, marine conservation, community, and personal growth 
-              through self-challenge.
+              Today, Swake is a local freediving center in Siquijor offering Molchanovs Wave 1–3 certification, 
+              intro classes,  fundive adventures, and regular training sessions. The group dynamics is 
+              exactly why the idea that nothing in the ocean exists on its own is foundational to how we teach. 
+              We aim to promote sustainable freediving while sharing our passion for mindfulness, marine 
+              conservation, community, and personal growth through self-challenge.
             </p>
       
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Being local shapes how we dive. We are also in these waters most days, we know how the sites 
-              change with the season, tide, current, light, and waves, and we plan every session around these 
-              conditions, personal and paced.
+              We are in these waters most days, we know how the sites  change with the season, tide, current, 
+              light, and waves, and we plan every session around these conditions, personal and paced.
             </p>
           </div>
       
