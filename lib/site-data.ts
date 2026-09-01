@@ -191,8 +191,8 @@ export const services: ServiceSummary[] = [
     title: "Molchanovs Certification Courses",
     shortTitle: "Courses",
     summary:
-      "Structured Wave 1 and Wave 2 training for divers building a safer foundation, better technique, and more depth comfort.",
-    priceLabel: "Wave 1 & Wave 2",
+      "Structured Wave 1 - 3 training for divers building a safer foundation, better technique, and more depth comfort.",
+    priceLabel: "Wave 1 - 3",
     ctaLabel: "View Courses",
     href: "/services/courses",
     image: "/gallery/intro-1.jpg",
