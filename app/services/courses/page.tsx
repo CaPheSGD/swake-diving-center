@@ -5,7 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { courseCards } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Molchanovs Courses",
+  title: "Molchanovs Wave Courses",
   description:
     "Molchanovs certification courses in Siquijor for divers building safer technique and deeper comfort.",
   alternates: { canonical: "/services/courses" },
@@ -18,9 +18,9 @@ export default function CoursesPage() {
     <>
       <PageHero
         eyebrow="Courses"
-        title="Molchanovs Certification Courses"
-        description="Structured training for divers building a safer foundation, better technique, and more depth comfort."
-        kicker="Wave 1 and Wave 2"
+        title="Molchanovs Wave Certification Courses"
+        description="Progressive training program for divers building a safer foundation, better technique, and more depth comfort."
+        kicker="Wave 1 - 3"
       />
 
       {courseGallery.length > 0 && <Gallery images={courseGallery} />}
