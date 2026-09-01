@@ -80,7 +80,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               {site.description}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Legal business name: {site.legalName}
+              Registered name: {site.legalName}
             </p>
           </div>
 
