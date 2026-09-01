@@ -30,9 +30,6 @@ export default function HomePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
               What we offer
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">
-              Intro classes, line training, guided fundives, and Molchanovs courses.
-            </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {site.trustPoints?.map((point) => (
                 <div
@@ -57,7 +54,7 @@ export default function HomePage() {
             </p>
             <div className="mt-2 space-y-3 text-sm text-slate-200">
               <p>Community: {site.name}</p>
-              <p>Business name: {site.legalName}</p>
+              <p>Registered name: {site.legalName}</p>
               <p>Phone: {site.contact.phone}</p>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
