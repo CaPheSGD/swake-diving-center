@@ -90,7 +90,7 @@ export const site = {
     { label: "Email", href: `mailto:${contact.email}` },
   ],
   location: {
-    area: "Sitio Sawanb, Brgy. Tubod, San Juan, Siquijor",
+    area: "Sitio Sawang, Brgy. Tubod, San Juan, Siquijor",
     province: "Siquijor, Philippines",
     note: "Exact dive sites depend on conditions for the day.",
   },
