@@ -134,7 +134,7 @@ export const services: ServiceSummary[] = [
     imageAlt: "Intro to freediving session in Siquijor",
     gallery: [
       "/images/intro/1.JPG",
-      "/images/intro/2.png",
+      "/images/intro/2.jpg",
       "/images/intro/3.jpeg",
     ],
   },
@@ -151,9 +151,9 @@ export const services: ServiceSummary[] = [
     imageAlt: "Guided fundive in Siquijor",
     gallery: [
       "/images/fundive/1.JPG",
-      "/images/fundive/2.png",
-      "/images/fundive/3.png",
-      "/images/fundive/4.png",
+      "/images/fundive/2.jpg",
+      "/images/fundive/3.jpg",
+      "/images/fundive/4.jpg",
       "/images/fundive/5.jpg",
       "/images/fundive/6.jpg",
       "/images/fundive/7.jpg",
@@ -162,8 +162,8 @@ export const services: ServiceSummary[] = [
       "/images/fundive/10.jpg",
       "/images/fundive/11.JPG",
       "/images/fundive/12.jpg",
-      "/images/fundive/13.png",
-      "/images/fundive/14.png",
+      "/images/fundive/13.jpg",
+      "/images/fundive/14.jpg",
     ],
   },
   {
@@ -175,15 +175,15 @@ export const services: ServiceSummary[] = [
     priceLabel: "₱1,500–₱2,500",
     ctaLabel: "View Training",
     href: "/services/line-training",
-    image: "/gallery/line-training-1.png",
+    image: "/gallery/line-training-1.jpg",
     imageAlt: "Freediving line training session",
     gallery: [
-      "/images/linetraining/1.png",
+      "/images/linetraining/1.jpg",
       "/images/linetraining/2.JPG",
-      "/images/linetraining/3.png",
-      "/images/linetraining/4.png",
-      "/images/linetraining/5.png",
-      "/images/linetraining/6.png",
+      "/images/linetraining/3.jpg",
+      "/images/linetraining/4.jpg",
+      "/images/linetraining/5.jpg",
+      "/images/linetraining/6.jpg",
     ],
   },
   {
@@ -195,7 +195,7 @@ export const services: ServiceSummary[] = [
     priceLabel: "Wave 1 & Wave 2",
     ctaLabel: "View Courses",
     href: "/services/courses",
-    image: "/gallery/intro-1.png",
+    image: "/gallery/intro-1.jpg",
     imageAlt: "Freediving course session in Siquijor",
     gallery: [],
   },
@@ -225,10 +225,10 @@ export const courseCards: CourseCard[] = [
   },
   {
     title: "Molchanovs Wave 2",
-    duration: "3-4 days",
+    duration: "3 days",
     price: "Contact for current rate",
     summary:
-      "Advanced course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
+      "Progressive course for divers ready to refine technique, improve efficiency, and build deeper confidence.",
     requirements: [
       "Wave 1 or equivalent certification",
       "Comfort with previous depth training",
@@ -239,30 +239,9 @@ export const courseCards: CourseCard[] = [
       "Rescue and safety progression",
       "Depth-specific coaching",
       "Structured performance feedback",
-      "Transition recreational divers into autonomous",
     ],
     note:
       "Best suited to divers who already have a solid foundation and want guided progression.",
-    gallery: [],
-  },
-  {
-    title: "Molchanovs Wave 3",
-    duration: "4-5 days",
-    price: "Contact for current rate",
-    summary:
-      "Master freediving certification course covering advanced equalization, open-water techniques, and a resilient mental foundation.",
-    requirements: [
-      "Wave 2 or equivalent certification",
-      "Comfort with previous depth training",
-      "Good equalization control",
-    ],
-    highlights: [
-      "Transitioning to deep Frenzel and mouthfill equalization, plus reverse packing",
-      "Attention deconcentration and relaxation techniques under performance pressure",
-      "Qualification to act as an assistant instructor for Wave 1 and Wave 2 courses",
-    ],
-    note:
-      "Best suited to divers who are eager to master recreational freediving training.",
     gallery: [],
   },
 ];
@@ -295,7 +274,7 @@ export const introDetails: IntroDetails = {
   ],
   gallery: [
     "/images/intro/1.JPG",
-    "/images/intro/2.png",
+    "/images/intro/2.jpg",
     "/images/intro/3.jpeg",
   ],
 };
@@ -329,9 +308,9 @@ export const fundiveDetails: FundiveDetails = {
   ],
   gallery: [
     "/images/fundive/1.JPG",
-    "/images/fundive/2.png",
-    "/images/fundive/3.png",
-    "/images/fundive/4.png",
+    "/images/fundive/2.jpg",
+    "/images/fundive/3.jpg",
+    "/images/fundive/4.jpg",
     "/images/fundive/5.jpg",
     "/images/fundive/6.jpg",
     "/images/fundive/7.jpg",
@@ -340,8 +319,8 @@ export const fundiveDetails: FundiveDetails = {
     "/images/fundive/10.jpg",
     "/images/fundive/11.JPG",
     "/images/fundive/12.jpg",
-    "/images/fundive/13.png",
-    "/images/fundive/14.png",
+    "/images/fundive/13.jpg",
+    "/images/fundive/14.jpg",
   ],
 };
 
@@ -372,11 +351,11 @@ export const lineTrainingDetails: LineTrainingDetails = {
     "Final setup depends on conditions and diver level.",
   ],
   gallery: [
-    "/images/linetraining/1.png",
+    "/images/linetraining/1.jpg",
     "/images/linetraining/2.JPG",
-    "/images/linetraining/3.png",
-    "/images/linetraining/4.png",
-    "/images/linetraining/5.png",
-    "/images/linetraining/6.png",
+    "/images/linetraining/3.jpg",
+    "/images/linetraining/4.jpg",
+    "/images/linetraining/5.jpg",
+    "/images/linetraining/6.jpg",
   ],
 };
