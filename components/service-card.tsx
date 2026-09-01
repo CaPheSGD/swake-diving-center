@@ -14,6 +14,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
           src={service.image}
           alt={service.imageAlt}
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover"
         />
       </div>
