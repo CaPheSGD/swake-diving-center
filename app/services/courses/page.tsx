@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { CtaStrip } from "@/components/cta-strip";
+import { DetailList } from "@/components/detail-list";
 import { Gallery } from "@/components/gallery";
 import { PageHero } from "@/components/page-hero";
 import { courseCards } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Molchanovs Wave Courses",
+  title: "Molchanovs Courses",
   description:
     "Molchanovs certification courses in Siquijor for divers building safer technique and deeper comfort.",
   alternates: { canonical: "/services/courses" },
@@ -18,9 +19,9 @@ export default function CoursesPage() {
     <>
       <PageHero
         eyebrow="Courses"
-        title="Molchanovs Wave Certification Courses"
-        description="Progressive training program for divers building a safer foundation, better technique, and more depth comfort."
-        kicker="Wave 1 - 3"
+        title="Molchanovs Certification Courses"
+        description="Structured training for divers building a safer foundation, better technique, and more depth comfort."
+        kicker="Wave 1 and Wave 2"
       />
 
       {courseGallery.length > 0 && <Gallery images={courseGallery} />}
@@ -46,25 +47,11 @@ export default function CoursesPage() {
               </p>
 
               <div className="mt-6">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-200">
-                  Requirements
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-300">
-                  {course.requirements.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
+                <DetailList title="Requirements" items={course.requirements} />
               </div>
 
               <div className="mt-6">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-200">
-                  Highlights
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-300">
-                  {course.highlights.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
+                <DetailList title="Highlights" items={course.highlights} />
               </div>
 
               {course.note && (
