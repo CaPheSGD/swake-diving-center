@@ -43,7 +43,7 @@ export default function ContactPage() {
                 href={site.contact.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-[#25D366]/20"
+                className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-[#E4405F]/20"
               >
                 <span className="text-[#E4405F]">Instagram:</span> @swakefreedivers_siquijor
               </a>
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 href={site.contact.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-[#E4405F]/20"
+                className="rounded-2xl border border-[#3AA0C8]/20 bg-black/60 p-4 transition hover:border-[#3AA0C8] hover:bg-[#1877F2]/20"
               >
                 <span className="text-[#1877F2]">Facebook:</span> @SwakeFreediversSiquijor
               </a>
