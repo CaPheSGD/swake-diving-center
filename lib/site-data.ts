@@ -90,15 +90,15 @@ export const site = {
     { label: "Email", href: `mailto:${contact.email}` },
   ],
   location: {
-    area: "Tubod, San Juan, Siquijor",
+    area: "Sitio Sawanb, Brgy. Tubod, San Juan, Siquijor",
     province: "Siquijor, Philippines",
     note: "Exact dive sites depend on conditions for the day.",
   },
   trustPoints: [
-    "Calm, unhurried learning.",
-    "Sessions are planned around actual sea conditions and diver level.",
+    "Calm, unhurried sessions.",
+    "Planned around actual sea conditions and diver level.",
     "Suitable for first-timers, returning divers, and progressing students.",
-    "Progression is kept steady and not rushed.",
+    "Progression not rushed but kept steady.",
   ],
 };
 
