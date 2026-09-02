@@ -33,7 +33,7 @@ export default function CoursesPage() {
               key={course.title}
               className="rounded-3xl border border-white/10 bg-white/5 p-8"
             >
-              <h2 className="text-4xl font-bold uppercase tracking-[0.24em] text-[#c84f3a]">
+              <h2 className="text-3xl font-bold uppercase tracking-[0.24em] text-[#c84f3a]">
                 {course.title}
               </h2>
               <p className="mt-sm text-sm font-semibold text-white">
