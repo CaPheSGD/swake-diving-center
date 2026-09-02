@@ -21,7 +21,7 @@ export default function CoursesPage() {
         eyebrow="Courses"
         title="Molchanovs Certification Courses"
         description="Structured training for divers building a safer foundation, better technique, and more depth comfort."
-        kicker="Wave 1 and Wave 2"
+        kicker="Wave 1 - 3"
       />
 
       {courseGallery.length > 0 && <Gallery images={courseGallery} />}
