@@ -18,7 +18,12 @@ const navItems = [
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="relative min-h-screen overflow-hidden bg-black text-white">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-10 -top-10 z-0 h-56 w-56 rounded-full bg-[#F15A24]/30 blur-[70px]"
+      />
+
       <header className="sticky top-0 z-30 border-b border-[#3AA0C8]/20 bg-black/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
           <Link href="/" className="flex min-w-0 items-center gap-3">
@@ -80,7 +85,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
               {site.description}
             </p>
             <p className="mt-4 text-sm text-slate-500">
-              Registered name: {site.legalName}
+              Legal business name: {site.legalName}
             </p>
           </div>
 
