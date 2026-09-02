@@ -24,7 +24,7 @@ export default function AboutPage() {
           {/* Description */}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <p className="text-sm leading-7 text-slate-300">
-              Swake is a community built around freediving, the ocean, and the people who share it.
+              Swake (swa-kēh) is a community built around freediving, the ocean, and the people who share it.
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
               Year 2017-2023, Swake was just a group of people who loved diving — day-job workers,
