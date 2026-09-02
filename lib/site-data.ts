@@ -97,7 +97,7 @@ export const site = {
   trustPoints: [
     "Calm, unhurried sessions.",
     "Planned around actual sea conditions and diver level.",
-    "Suitable for first-timers, returning divers, and progressing students.",
+    "Sessions suitable for first-timers, returning divers, and progressing students.",
     "Progression not rushed but kept steady.",
   ],
 };
