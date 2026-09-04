@@ -464,7 +464,7 @@ export const team: TeamMember[] = [
     name: "Sul Dahunan",
     role: "Snorkeling guide",
     certification: "Candidate Molchanovs W1",
-    bio: "Started freediving as a tour guide at Tulapos Marine Sanctuary and has been diving for 3 years since. Now works as a DA-NIR staff and part-time guide and fundive videographer, capturing underwater footage and editing it himself. Playfully explore angles for a great shot.",
+    bio: "Started freediving as a tour guide and has been diving for 3 years since. Now works as a DA-NIR staff and part-time guide and fundive videographer, capturing underwater footage and editing it himself. Playfully explore angles for a great shot.",
     image: "/images/team/sul.jpg",
   },
 ];
