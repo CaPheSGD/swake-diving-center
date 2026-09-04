@@ -457,7 +457,7 @@ export const team: TeamMember[] = [
     name: "Reyida Keith Ocao",
     role: "Administrative Officer/Accountant",
     certification: "Molchanovs W1",
-    bio: "Started freediving 2 years ago after encouragement from KC — current PB 23.9m. Handles Swake's finance and dive/gear records, invoicing, and client payments; and enjoys pickleball and nature trips.  Patient with beginners, calm and focused underwater, always chasing a bit more depth.  ",
+    bio: "Started freediving 2 years ago after encouragement from KC. Handles Swake's finance and dive/gear records, invoicing, and client payments; and enjoys pickleball and nature trips.  Patient, calm, and focused underwater, always chasing a bit more depth.",
     image: "/images/team/reyida.jpg",
   },
   {
