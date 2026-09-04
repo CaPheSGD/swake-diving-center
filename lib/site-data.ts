@@ -408,7 +408,7 @@ export const team: TeamMember[] = [
     name: "Glee Joshua Bunado",
     role: "Master Freediver/ Assistant Instructor",
     certification: "Molchanovs W3",
-    bio: "Freediving enthusiast, tech professional specializing in the Odoo ERP platform, and a chemical engineer",
+    bio: "Freediving since childhood, exploring tide pools on weekends and holidays; started training seriously in 2020 and earned his first certification in 2021. He assists in intro class for beginners and coaches line training for students refining form and depth technique. A chemical engineer now working as a software engineer, and active in various other sports in his free time. Teaches with patience above all, focusing on comfort and mastering equalization without rushing. Prefers dedicated line training over casual fundives, valuing the precision and deeper awareness.",
     image: "/images/team/buds.jpg",
   },
   {
