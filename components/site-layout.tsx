@@ -21,7 +21,11 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     <div className="relative min-h-screen overflow-hidden bg-black text-white">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-10 -top-10 z-0 h-56 w-56 rounded-full bg-[#F15A24]/30 blur-[50px]"
+        className="pointer-events-none absolute -right-20 -top-20 z-0 h-[28rem] w-[28rem] rounded-full blur-[100px]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(241,90,36,0.45) 0%, rgba(241,90,36,0.25) 40%, rgba(241,90,36,0) 70%)",
+        }}
       />
 
       <header className="sticky top-0 z-30 border-b border-[#3AA0C8]/20 bg-black/90 backdrop-blur">
