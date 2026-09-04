@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { TeamMember } from "@/lib/site-data";
+import { ExpandableBio } from "@/components/expandable-bio";
 
 type TeamSectionProps = {
   members: TeamMember[];
@@ -53,9 +54,7 @@ export function TeamSection({ members }: TeamSectionProps) {
               </p>
             ) : null}
 
-            <p className="mt-3 text-sm leading-6 text-slate-300">
-              {member.bio}
-            </p>
+            <ExpandableBio bio={member.bio} />
           </div>
         ))}
       </div>
