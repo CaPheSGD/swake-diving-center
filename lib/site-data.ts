@@ -11,6 +11,14 @@ export type ServiceSummary = {
   gallery: string[];
 };
 
+export type TeamMember = {
+  name: string;
+  role: string;
+  certification?: string;
+  bio: string;
+  image?: string;
+};
+
 export type CourseCard = {
   title: string;
   duration: string;
@@ -380,3 +388,30 @@ export const lineTrainingDetails: LineTrainingDetails = {
     "/images/linetraining/6.jpg",
   ],
 };
+
+export const team: TeamMember[] = [
+  {
+    name: "Jether Serino",
+    role: "Instructor",
+    certification: "Molchanovs W3 Instructor",
+    bio: "Short bio goes here — background, specialty, what they're like to dive with.",
+  },
+  {
+    name: "Kalvin Klein Matas",
+    role: "Master Freediver",
+    certification: "Molchanovs W3",
+    bio: "Short bio goes here — background, specialty, what they're like to dive with.",
+  },
+  {
+    name: "Glee Joshua Bunado",
+    role: "Master Freediver",
+    certification: "Molchanovs W3",
+    bio: "Short bio goes here — background, specialty, what they're like to dive with.",
+  },
+  {
+    name: "Charisse Nicole Espinosa",
+    role: "Administrative Officer",
+    certification: " ",
+    bio: "Short bio goes here — background, specialty, what they're like to dive with.",
+  },
+];
