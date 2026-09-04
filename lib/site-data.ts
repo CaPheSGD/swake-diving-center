@@ -395,23 +395,27 @@ export const team: TeamMember[] = [
     role: "Instructor",
     certification: "Molchanovs W3 Instructor",
     bio: "Short bio",
+    image: "jether.jpg",
   },
   {
     name: "Kalvin Klein Matas",
     role: "Master Freediver/Assistant Instructor",
     certification: "Molchanovs W3",
     bio: "Short bio",
+    image: "kc.jpg",
   },
   {
     name: "Glee Joshua Bunado",
     role: "Master Freediver/Assistant Instructor",
     certification: "Molchanovs W3",
     bio: "Short bio",
+    image: "buds.jpg",
   },
   {
     name: "Charisse Nicole Espinosa",
     role: "Administrative Officer/Accountant",
     certification: " ",
     bio: "Short bio",
+    image: "charisse.jpg",
   },
 ];
