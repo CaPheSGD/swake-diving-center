@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
-import { site } from "@/lib/site-data";
+import { TeamSection } from "@/components/team-section";
+import { site, team } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "About",
@@ -21,15 +22,28 @@ export default function AboutPage() {
       <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-2">
 
+          {/* Identity / Philosophy */}
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h2 className="text-xl font-semibold text-white">
+              Local, guided, and safety-first
+            </h2>
+            <ul className="mt-4 space-y-2 text-sm leading-6 text-slate-300">
+              <li>• Small, intimate classes and openwater sessions</li>
+              <li>• Focus on technique, comfort, and long-term progression</li>
+              <li>• Local knowledge of reefs, currents, and visibility</li>
+              <li>• Local knowledge of site conditions</li>
+            </ul>
+          </div>
+
           {/* Description */}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <p className="text-sm leading-7 text-slate-300">
-              Swake (swa-kēh) is a community built around freediving, the ocean, and the people who share it.
+              Swake is a community built around freediving, the ocean, and the people who share it.
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Year 2017-2023, Swake was just a group of people who loved diving — day-job workers,
+              Before Swake was a school, it was a group of people who loved diving — day-job workers,
               graveyard-shift staff,  freelancers, plane mechanic, artists, government employees,
-              marine ecology student, bantay dagat volunteers, social workers, and weekend sport enthusiasts,
+              marine ecologists, bantay dagat volunteers, social workers, and weekend sport enthusiasts,
               each with different lives but the same Saturday plan: 2–3 hours in open water, line
               training or a fundive, whenever the week allowed.
             </p>
@@ -63,6 +77,8 @@ export default function AboutPage() {
 
         </div>
       </section>
+
+      <TeamSection members={team} />
     </>
   );
 }
