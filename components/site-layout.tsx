@@ -21,7 +21,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
     <div className="relative min-h-screen overflow-hidden bg-black text-white">
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-32 left-0 right-0 z-0 h-72 w-full bg-[#F15A24]/20 blur-[100px]"
+        className="pointer-events-none absolute -right-10 -top-10 z-0 h-56 w-56 rounded-full bg-[#F15A24]/30 blur-[50px]"
       />
 
       <header className="sticky top-0 z-30 border-b border-[#3AA0C8]/20 bg-black/90 backdrop-blur">
