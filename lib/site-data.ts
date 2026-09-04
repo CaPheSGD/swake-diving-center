@@ -447,7 +447,7 @@ export const team: TeamMember[] = [
     image: "/images/team/johnL.jpg",
   },
   {
-    name: "Joezel "Soysoy" Lazarte",
+    name: "Soyinx Lazarte",
     role: "Fundive Guide",
     certification: "Molchanovs W1",
     bio: "Short bio",
