@@ -436,7 +436,7 @@ export const team: TeamMember[] = [
     name: "Jayson Abas",
     role: "Fundive Guide/ SocMed Manager",
     certification: "Molchanovs W2",
-    bio: "Captures and edits freediving media for locals and tourists exploring popular diving locations around Siquijor Island, also a dedicated tour guide in the island.",
+    bio: "Started freediving in October 2023, talked into it by his friend Pipay for the self-challenge — 3 years in now. Handles marketing, line training, and fundive guiding. Outside diving: surfskating, coffee, Dota, and tour guiding at waterfalls and island tours. Always checks water conditions and temperature first to dial in camera settings for smoother edits. Describes the feeling underwater as being one with the sea creatures, respectfully.",
     image: "/images/team/jayson.jpg",
   },
   {
