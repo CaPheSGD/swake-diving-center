@@ -415,12 +415,12 @@ export const team: TeamMember[] = [
     name: "Bernard Serino",
     role: "Co-founder/ Master Freediver",
     certification: "Molchanovs W3",
-    bio: "Short bio",
+    bio: "--------",
     image: "/images/team/bernard.jpg",
   },
   {
     name: "Charisse Nicole Espinosa",
-    role: "Co-founder/ Administrative Officer/ Accountant",
+    role: "Co-founder/ Admin Officer/ Accountant",
     certification: " ",
     bio: "Has an immense dedication in freediving activities and related field, works mainly accounting and financial sectors",
     image: "/images/team/charisse.jpg",
@@ -455,7 +455,7 @@ export const team: TeamMember[] = [
   },
   {
     name: "Reyida Keith Ocao",
-    role: "Administrative Officer/ Accountant",
+    role: "Administrative Officer/ Finance",
     certification: "Molchanovs W1",
     bio: "Started freediving 2 years ago after encouragement from KC. Handles Swake's finance and dive/gear records, invoicing, and client payments; and enjoys pickleball and nature trips.  Patient, calm, and focused underwater, always chasing a bit more depth.",
     image: "/images/team/reyida.jpg",
